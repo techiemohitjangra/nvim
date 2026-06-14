@@ -1,15 +1,24 @@
+require('vim._core.ui2').enable({
+    enable = true
+})
+
 require('config')
 require('plugins')
 
 vim.lsp.enable({
-    'lua_ls',
-    'zls',
-    'rust_analyzer',
-    'pyright',
-    -- 'cmake-language-server',
     -- 'clangd',
+    -- 'cmake',
+    'css',
     'gopls',
-    'html_ls',
-    'css_ls',
-    'ts_ls',
+    'html',
+    'lua',
+    'python',
+    'rust',
+    'typescript',
+    'zig',
 })
+
+vim.cmd [[
+     autocmd FileType go colorscheme dracula
+]]
+
