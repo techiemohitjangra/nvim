@@ -34,9 +34,12 @@ require("blink.cmp").setup({
         -- Show documentation instantly when moving through items
         documentation = {
             auto_show = true,
-            auto_show_delay_ms = 250,
+            auto_show_delay_ms = 100,
+            -- auto_show_delay_ms = 250,
         },
     },
+
+    snippets = { preset = 'luasnip' },
 
     -- Native signature help (tells you function arguments while typing)
     signature = { enabled = true },

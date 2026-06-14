@@ -6,7 +6,7 @@ vim.pack.add({
     {
         src = 'https://github.com/nvim-telescope/telescope.nvim',
         name = 'telescope',
-        version = vim.version.range('*')
+        -- version = vim.version.range('*')
     },
 })
 

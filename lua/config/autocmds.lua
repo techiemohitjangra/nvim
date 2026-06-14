@@ -4,7 +4,7 @@ vim.api.nvim_create_autocmd('TextYankPost', {
     group = highlight_group,
     pattern = '*',
     callback = function()
-        vim.highlight.on_yank({
+        vim.hl.on_yank({
             higroup = 'IncSearch',
             timeout = 40,
         })
@@ -48,7 +48,7 @@ vim.api.nvim_create_autocmd('BufWritePre', {
     pattern = '*',
     -- command = 'retab',
     callback = function()
-        if vim.bo.filetype == "make" then
+        if vim.bo.filetype == "make" or vim.bo.filetype == "go" then
             return
         end
 
