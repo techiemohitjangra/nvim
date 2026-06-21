@@ -17,8 +17,3 @@ vim.lsp.enable({
     'typescript',
     'zig',
 })
-
-vim.cmd [[
-     autocmd FileType go colorscheme dracula
-]]
-
